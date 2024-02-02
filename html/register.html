@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+        <script src="../js/fontawesome-all.min.js"></script>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="container-register">
+            <div id="container-register-form">
+                <div class="register-form-header">
+                    <h2>Create Account</h2>
+                </div>
+                <form class="register-form" onsubmit="registerUser(event)">
+                    <div class="register-form-content">
+                        <label>First Name</label>
+                        <input type="text" id="register-first-name" name="register_firstName" placeholder="First Name">
+                        <i class="fas fa-check-circle register-form-icon-success"></i>
+                        <i class="fas fa-exclamation-circle register-form-icon-error"></i>
+                        <small></small>
+                    </div>
+                    <div class="register-form-content">
+                        <label>Last Name</label>
+                        <input type="text" id="register-last-name" name="register_lastName" placeholder="Last Name">
+                        <i class="fas fa-check-circle register-form-icon-success"></i>
+                        <i class="fas fa-exclamation-circle register-form-icon-error"></i>
+                        <small></small>
+                    </div>
+                    <div class="register-form-content">
+                        <label>Email</label>
+                        <input type="email" id="register-email" name="register_email" placeholder="Email">
+                        <i class="fas fa-check-circle register-form-icon-success"></i>
+                        <i class="fas fa-exclamation-circle register-form-icon-error"></i>
+                        <small></small>
+                    </div>
+                    <div class="register-form-content">
+                        <label>Password</label>
+                        <input type="password" id="register-password" name="register_password" placeholder="Password">
+                        <i class="fas fa-check-circle register-form-icon-success"></i>
+                        <i class="fas fa-exclamation-circle register-form-icon-error"></i>
+                        <small></small>
+                    </div>
+                    <div class="register-form-content">
+                        <label>Confirm Password</label>
+                        <input type="password" id="register-confirm-password" placeholder="Confirm Password">
+                        <i class="fas fa-check-circle register-form-icon-success"></i>
+                        <i class="fas fa-exclamation-circle register-form-icon-error"></i>
+                        <small></small>
+                    </div>
+                    <div class="register-form-content">
+                        <input type="submit" value="Create Account">
+                    </div>
+                    <div class="register-form-content">
+                        <p>Already have an account? <a href="../html/login.html">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="../js/signing.js"></script>
+    </body>
+</html>
